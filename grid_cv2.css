@@ -1,0 +1,180 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"header exp"
+                        "header exp"
+                        "header exp"
+                        "header exp"
+                        "skills educ"
+                        "skills educ"
+                        "skills languages"
+                        "skills languages";
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+div#item{
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.item1{
+    grid-area: header;
+    background-color: rgb(231, 85, 0);
+    font-size: 20pt;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22% 0;
+}
+
+.item2{
+    grid-area: exp;
+    background-color: rgb(255, 154, 38);
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 1% 3%;
+}
+
+.item3{
+    grid-area: educ;
+    background-color: rgb(255, 255, 255);
+    font-size: 13pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(20, 0, 14);
+    padding: 1% 3%;
+}
+
+.item4{
+    grid-area: skills;
+    background-color: rgb(211, 211, 211);
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 1% 3%;
+}
+
+.item5{
+    grid-area: languages;
+    background-color: rgb(0, 0, 0);
+    font-size: 13pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 104, 4);
+    border: solid orangered 3px;
+    padding: 1% 3%;
+}
+
+.subheader{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
+}
+
+.entryheader{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(2, 0, 27);
+    font-weight: bolder;
+    font-size: 15pt;
+}
+
+.entrydesc{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 12pt;
+    font-weight: 530;
+}
+
+.photoCV{
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    background-position: 50% 50%;
+}
+
+
+.gauge#frontend{
+    width: 20%;
+    height: 3%;
+    background: linear-gradient(to right, rgb(0, 184, 240), rgb(44, 123, 160))
+}
+
+ul#skilist li:nth-child(2){
+    margin: 0;
+	padding: 10px 30px 0 0;
+	list-style: none;
+	background-image: url("pythonlogo.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+
+.entryheader#Python{
+    padding-left: 40px;
+}
+
+.gauge#python{
+    width: 55%;
+    height: 3%;
+    background: linear-gradient(to right, rgb(0, 184, 240), rgb(235, 94, 240))
+}
+
+.entryheader#Cpp{
+    padding-left: 40px;
+}
+
+.gauge#Cpp{
+    width: 90%;
+    height: 3%;
+    background: linear-gradient(to right, rgb(0, 184, 240), rgb(191, 0, 197))
+}
+
+ul#skilist li:nth-child(3){
+    margin: 0;
+	padding: 10px 30px 0 0;
+	list-style: none;
+	background-image: url("cpplogo.jpg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+
+ul#educlist{
+    list-style-image: none;
+}
+
+ul#lang li:nth-child(1){
+    margin: 0;
+    padding-left: 40px;
+    padding-bottom: 2px;
+	list-style: none;
+	background-image: url("unionjack.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+
+ul#lang li:nth-child(2){
+    margin: 0;
+    padding-left: 40px;
+    padding-bottom: 2px;
+	list-style: none;
+	background-image: url("nihon.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+
+ul#lang li:nth-child(3){
+    margin: 0;
+    padding-left: 40px;
+    padding-bottom: 2px;
+	list-style: none;
+	background-image: url("espana.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
